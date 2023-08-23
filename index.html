@@ -7,6 +7,7 @@
 	<!-- Link to Your CSS document-->
 	<link href="responsive-layout.css" rel="stylesheet"/>
 <script>
+	<!-- web browser checker Opera Chrome Firefox Edge-->
 		function checkBrowser(){
 		if ((navigator.userAgent.indexOf( "Opera" ) ||
 		navigator.userAgent.indexOf( 'OPR' )) != -1 )
@@ -29,10 +30,10 @@
 		alert( 'Firefox' );
 		document.getElementById( "demo" ).innerHTML = "Firefox" ;
 		}
-		else if ((navigator.userAgent.indexOf( "MSIE" ) != -1 ) ||
+		else if ((navigator.userAgent.indexOf( "Edge" ) != -1 ) ||
 		(!! document.documentMode == true )) //IF IE > 10
 		{
-		alert( 'IE' );
+		alert( 'Edge' );
 		}
 		else
 		{
