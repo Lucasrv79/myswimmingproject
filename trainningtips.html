@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                                                              <!-- Cabeza-->
+	<meta charset="utf-8"/>
+	<title> The Swimming Project </title>
+	<meta name="description" content="The swimming project website, group swim lessons, private swim lessons">
+	<link href="responsive-layout.css" rel="stylesheet"/><!-- Link to Your CSS document-->
+<script>
+}
+	function checkBrowser(){
+	if ((navigator.userAgent.indexOf( "Opera" ) ||
+	navigator.userAgent.indexOf( 'OPR' )) != -1 )
+	{
+	alert( 'Opera' );
+	//or write to the page element demo, therefore preventing a popup
+	document.getElementById( "demo" ).innerHTML = "Opera" ;
+	}
+	else if (navigator.userAgent.indexOf("Chrome") != -1 )
+	{
+	alert( 'Chrome' );
+	document.getElementById( "demo" ).innerHTML="Chrome" ;
+	}
+	else if (navigator.userAgent.indexOf( "Safari" ) != -1)
+	{
+	alert( 'Safari' );
+	}
+	else if (navigator.userAgent.indexOf( "Firefox" ) != -1 )
+	{
+	alert( 'Firefox' );
+	document.getElementById( "demo" ).innerHTML = "Firefox" ;
+	}
+	else if ((navigator.userAgent.indexOf( "MSIE" ) != -1 ) ||
+	(!! document.documentMode == true )) //IF IE > 10
+	{
+	alert( 'IE' );
+	}
+	else
+	{
+	alert( 'unknown' );
+	}
+}
+</script>
+</head> 
+<!-- end head --> 
+<body onload="checkBrowser()">
+
+	<header> <!-- we call now just the header now in HTML 5, we us to call with </div id= "header"....> -->
+		<img src="images/logo1.jpg" alt="Logo"> 
+		<h1 style> Trainning Tips </h1>	
+	</header>
+	<nav class="clear">
+		<div class="element">
+			<ul>
+				<li><a href="index.html" class="button"> Home </a></li>
+				<li><a href="trainningtips.html" class="button"> Trainning Tips </a></li>
+				<li><a href="references.html" class="button"> References </a></li>
+				<li><a href="contact.html" class="button"> Contact </a></li>
+				<li><a href="swimWhitUs.html" class="button"> Join Us </a></li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+		<div class = "contact-container" >
+			<div style = "text-align:center" > 
+				<h2> Trainning Tips </h2>
+				<p> Some tips for your swimming routine : </p>
+				</div>
+					<div class = "row" >
+						<div class = "column2" ><!-- Column for trainning tips -->
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/7luWwb5hDqk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/Ne4OoLYVNeU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					<div class = "column3" > <!-- Column for written tips -->
+					<h2 style> Front crawl drill</h2>
+					<p><b>Tips from us:</b> full streching arms, <strong>holding a good posture</strong>, head slight up, streching legs and foot, using front crawl action arms, a powerfull arm strokes by three front kicks, <i>alternative breathing</i> by turning the head on rigth and left in each <b>front crawl</b> action arm</p>
+				</div>
+			</div>
+		</div>
+	</main>
+		<footer>
+			<p> <a href="https://wa.me/<353892208104>">Send text to us by using WhatsApp</a> </p> <!-- we call now just the footer now in HTML 5,  we us to call with </div id= "footer"....>-->
+		</footer>
+</body>
+</html>
+
+<!-- check www.w3school-->

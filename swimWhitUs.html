@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                                                              <!-- Head-->
+	<meta charset="utf-8"/>
+	<title>Swim with Us</title>
+	<meta name="description" content="the Website of Rathimines College Swimmin Team">
+	<link href="responsive-layout.css" rel="stylesheet"/><!-- Link to Your CSS document-->
+	<link href="connect1.php"/>
+<script>
+		function checkForm (){
+		var fname = document.forms[ "contactForm" ][ "firstname" ];
+		var email = document.forms[ "contactForm" ][ "email" ];
+		var what= document.forms[ "contactForm" ][ "message" ];
+		if (fname.value == "" ){
+		window.alert( "Please enter a valid fisrt name." );
+		name.focus();
+		return false ;
+		}
+		if (isNAN(fname.value) != true){
+		window.alert("Please enter a valid fisrt name");
+		name.focus():
+		return false;
+		}
+		if (email.value == "" ){
+		window.alert( "Please enter a valid e-mail address." );
+		email.focus();
+		return false ;
+		}
+		if (email.value.indexOf( "@" , 0) < 0)
+		{
+		window.alert( "Please enter a valid e-mail address." );
+		email.focus();
+		return false ;
+		}
+		if (email.value.indexOf( "." , 0) < 0)
+		{
+		window.alert( "Please enter a valid e-mail address." );
+		email.focus();
+		return false ;
+		}
+		if (what.value < 5)
+		{
+		alert( "Please enter a proper message" );
+		what.focus();
+		return false ;
+		}
+		return true ;
+}
+</script>
+<script>
+	function checkBrowser(){
+	if ((navigator.userAgent.indexOf( "Opera" ) ||
+	navigator.userAgent.indexOf( 'OPR' )) != -1 )
+	{
+	alert( 'Opera' );
+	//or write to the page element demo, therefore preventing a popup
+	document.getElementById( "demo" ).innerHTML = "Opera" ;
+	}
+	else if (navigator.userAgent.indexOf("Chrome") != -1 )
+	{
+	alert( 'Chrome' );
+	document.getElementById( "demo" ).innerHTML="Chrome" ;
+	}
+	else if (navigator.userAgent.indexOf( "Safari" ) != -1)
+	{
+	alert( 'Safari' );
+	}
+	else if (navigator.userAgent.indexOf( "Firefox" ) != -1 )
+	{
+	alert( 'Firefox' );
+	document.getElementById( "demo" ).innerHTML = "Firefox" ;
+	}
+	else if ((navigator.userAgent.indexOf( "MSIE" ) != -1 ) ||
+	(!! document.documentMode == true )) //IF IE > 10
+	{
+	alert( 'IE' );
+	}
+	else
+	{
+	alert( 'unknown' );
+	}
+}
+</script>
+</head>
+<!-- end head --> 
+
+<body onload="checkBrowser()">
+
+	<header> <!-- we call now just the header now in HTML 5, we us to call with </div id= "header"> -->
+		<img src="images/logo1.jpg" alt="LogoTM">
+		<h1 style>Join Us</h1>
+	</header>
+	<nav class="clear">
+		<div class="element">
+			<ul>
+				<li><a href="index.html" class="button"> Home </a></li>
+				<li><a href="trainningtips.html" class="button"> Trainning Tips </a></li>
+				<li><a href="references.html" class="button"> References </a></li>
+				<li><a href="contact.html" class="button"> Contact </a></li>
+				<li><a href="swimWhitUs.html" class="button"> Join Us </a></li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+		<section>
+				<div class = "contact-container" >
+					<div style = "text-align:center" > 
+						<h2>Join to our class</h2>			
+						<p>Once you chose a class, please complete the follow form with your personal information, and add your prefer time slot at the end.</p>
+					</div>
+					<div class = "row" >
+							<div class = "column2" ><!--Column for Google Map-->
+							<h3> Check our locations</h3>
+							<iframe width="500" height="350" src="https://data.gov.ie/dataset/swimming-pool/resource/78c89b2e-8cd2-41d8-9dae-3631d05a207c/view/7c5d84a2-d1b4-4045-9539-282799133fe2" frameBorder="0"></iframe>	
+							<!-- useJson here-->
+							</div>
+							<div class = "column2" > <!--Column for Contact form-->
+								<form name = "contactForm" action = "(C:)/xampp/connect1.php" onsubmit = "return checkForm()" method = "post" >
+									<label for = "fname" > First Name </label>
+									<input type = "text" id = "fname" name = "firstname" required placeholder = "Your fisrt name.." >
+									
+									<label for = "lname" > Last Name </label>
+									<input type = "text" id = "lname" name = "lastname" placeholder = "Your last name.." >
+									
+									<label for = "email" > Email </label>
+									<input type = "email" id = "email" name = "email"  required placeholder = "Please Enter your Email" ></br>
+									</br>
+									
+									<label for = "message" > Comment </label>
+									<textarea id = "message" name = "message" required placeholder = "Prefer time slot.." style = "height:170px" ></textarea>
+									<input type = "submit" value = "Submit" >
+								</form> 
+							</div>
+					</div>
+				</div>
+			</section>
+	</main>
+	<footer>
+	 <p> <a href="https://wa.me/<353892208104>">Send text to us by using WhatsApp</a> </p>
+	</footer>
+	

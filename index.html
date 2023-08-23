@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- Head-->
+	<meta charset="utf-8"/>
+	<title> My Swimming Lessons </title>
+	<meta name="description" content="The swimming project website, group swim lessons, private swim lessons"> <!-- Open and close tag-->
+	<!-- Link to Your CSS document-->
+	<link href="responsive-layout.css" rel="stylesheet"/>
+<script>
+		function checkBrowser(){
+		if ((navigator.userAgent.indexOf( "Opera" ) ||
+		navigator.userAgent.indexOf( 'OPR' )) != -1 )
+		{
+		alert( 'Opera' );
+		//or write to the page element demo, therefore preventing a popup
+		document.getElementById( "demo" ).innerHTML = "Opera" ;
+		}
+		else if (navigator.userAgent.indexOf("Chrome") != -1 )
+		{
+		alert( 'Chrome' );
+		document.getElementById( "demo" ).innerHTML="Chrome" ;
+		}
+		else if (navigator.userAgent.indexOf( "Safari" ) != -1)
+		{
+		alert( 'Safari' );
+		}
+		else if (navigator.userAgent.indexOf( "Firefox" ) != -1 )
+		{
+		alert( 'Firefox' );
+		document.getElementById( "demo" ).innerHTML = "Firefox" ;
+		}
+		else if ((navigator.userAgent.indexOf( "MSIE" ) != -1 ) ||
+		(!! document.documentMode == true )) //IF IE > 10
+		{
+		alert( 'IE' );
+		}
+		else
+		{
+		alert( 'unknown' );
+		}
+	}
+</script>
+</head> 
+<!-- end head --> 
+<body onload="checkBrowser()"> <!-- <body onload="incrementCount(10)"> --> 
+	<header> <!-- we call now just the header now in HTML 5, we us to call with </div id= "header"....> -->
+		<img src="images/logo1.jpg" alt=" ">
+		<h1 style>The Swimming Project</h1>
+	</header>
+	<nav class="clear">
+		<div class="element">
+			<ul>
+				<li><a href="index.html" class="button"> Home </a></li>
+				<li><a href="trainningtips.html" class="button"> Trainning Tips </a></li>
+				<li><a href="references.html" class="button"> References </a></li>
+				<li><a href="contact.html" class="button"> Contact </a></li>
+				<li><a href="swimWhitUs.html" class="button"> Join Us </a></li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+		<section>	
+			<div class = "row">
+				<div class = "column2" >
+					<h2 style> Forty Foot </h2>
+					<img src="images/DSC_0854.jpg" style="float=center" alt="Forty Foot" width="340" height="460" align="middle">
+				</div>				
+				<div class = "column2"> 
+						<h2 style >Welcome to Swimming Project Team</h2>
+						<p style="middle">A personal website, where I will <b>share</b> information my personal project as a swimming instructor, tips for beginners and advance swimmers, at the same time, feel free to suggest me any about, please click the button below...</p>
+						<a href="contact.html" class="button"> Join Us </a> 
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+	  <p> <a href="https://wa.me/<353892208104>">Send text to us by using WhatsApp</a> </p> <!-- we call now just the footer now in HTML 5,  we us to call with </div id= "footer"....>-->
+	</footer>
+</body>
+</html>
+
+
+
